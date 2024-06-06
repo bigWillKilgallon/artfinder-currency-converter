@@ -82,15 +82,10 @@ function useCurrencyConverter() {
 
     return {
         currencyRates,
-        currencyFrom,
         setCurrencyFrom,
-        currencyTo,
         setCurrencyTo,
-        amountTo,
         setAmountTo,
         convertedAmounts,
-        isLoading,
-        error,
     };
 }
 
