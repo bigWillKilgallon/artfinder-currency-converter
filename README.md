@@ -1,30 +1,8 @@
-# React + TypeScript + Vite
+#Artfinder technical test
+Got this task mostly done but started to go quite a bit over the time so ended it here.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+###Considerations:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. This uses `bun` package manager so will require `bun install` `bun run dev` commands running after cloning the repo.
+2. The currency conversion service provided has CORS issues so I have made use of the cors-anywhere reverse proxy. The rates won't load initially so I have added a button which will link you to the cors-anywhere page. Please click the "temporarily allow access" button on this page to get access to the EURO conversion rates endpoint. Normally we would have a separate backend to handle this but I felt this would be sufficient for the purpose of the tech task.
+3. Ignore the commit times, it has been manic preparing for the birthday party on Saturday so I slotted in time where I could. The "conversion logic mostly working" commit took approx 1.5 - 2hours
